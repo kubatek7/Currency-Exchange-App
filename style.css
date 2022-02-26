@@ -3,6 +3,7 @@ body {
   text-decoration: none;
 }
 /* ======Navigation Container====== */
+
 #navContainer ul {
   display: flex;
   max-width: 80vw;
@@ -13,7 +14,6 @@ body {
 }
 
 ul {
-  display: flex;
   justify-content: space-evenly;
 }
 ul button {
@@ -28,15 +28,17 @@ ul button {
   width: 200px;
   font-size: 1rem;
 }
-/* header */
+
+/* ====================Header======================= */
 
 #header {
   text-align: center;
   padding: 10px;
   text-shadow: 0.5px 2px rgb(42, 42, 43);
 }
-/* Main */
+/* ==================Main=========================== */
 
+/* ===============Page 1 =============== */
 #page1 {
   display: block;
   justify-content: center;
@@ -60,6 +62,8 @@ ul button {
 #input3,
 #input4 {
   font-size: 1.5rem;
+  padding: 5px;
+  margin: 2px;
 }
 
 #calBtn {
@@ -71,14 +75,31 @@ ul button {
   border-radius: 10px;
   position: absolute;
   margin-bottom: 20px;
-  /* text-align: center; */
 }
 .btnCal {
   text-align: center;
-  right: 100px;
 }
 
+/* ===============Page 2 =============== */
+
 #page2 {
+  display: none;
+  width: 80vw;
+  height: 75vh;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgb(194, 191, 191);
+  box-shadow: 2px 4px grey;
+}
+#page2 h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+}
+
+/* ===============Page 3 =============== */
+
+#page3 {
   display: none;
   width: 80vw;
   height: 75vh;
@@ -87,16 +108,6 @@ ul button {
   border: 1px solid rgb(238, 210, 51);
   box-shadow: 2px 4px rgb(238, 210, 51);
   background-color: rgb(236, 225, 159);
-}
-
-#page3 {
-  display: none;
-  width: 80vw;
-  height: 75vh;
-  margin: 20px auto;
-  border-radius: 15px;
-  border: 1px solid rgb(194, 191, 191);
-  box-shadow: 2px 4px grey;
 }
 #page3 h2 {
   text-align: center;
@@ -116,6 +127,11 @@ ul button {
 #page3 p {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid grey;
   padding: 10px;
+  text-align: center;
 }
+
+/* =========================TO DO LIST =========================== */
+/* Responsive screen  */
+/* Media Querry  */
