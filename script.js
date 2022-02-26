@@ -12,6 +12,8 @@ fetch('http://api.nbp.pl/api/exchangerates/tables/A/')
         });
     });
 
+// Block view on button click 
+
 function pageChange(pageNo) {
 
     let page1 = document.getElementById("page1");
@@ -34,6 +36,8 @@ function pageChange(pageNo) {
         page3.style.display = "block";
     }
 }
+
+// Currency calculation -based on PLN exchange rate to asking currency
 
 function calculate(){
     let amountOwned = document.getElementById("input2").value;
