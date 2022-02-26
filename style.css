@@ -88,27 +88,6 @@ ul button {
   box-shadow: 2px 4px rgb(238, 210, 51);
   background-color: rgb(236, 225, 159);
 }
-#page2 h2 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 4rem;
-}
-.inputPage2 {
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  text-align: center;
-  font-size: 2rem;
-}
-#InputDate {
-  font-size: 2rem;
-}
-#page2 p {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
 
 #page3 {
   display: none;
@@ -118,4 +97,25 @@ ul button {
   border-radius: 15px;
   border: 1px solid rgb(194, 191, 191);
   box-shadow: 2px 4px grey;
+}
+#page3 h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+}
+.inputPage3 {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+}
+#InputDate {
+  font-size: 2rem;
+}
+#page3 p {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
