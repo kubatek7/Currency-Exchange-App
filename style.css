@@ -1,0 +1,121 @@
+body {
+  background-color: white;
+  text-decoration: none;
+}
+/* ======Navigation Container====== */
+#navContainer ul {
+  display: flex;
+  max-width: 80vw;
+}
+
+#navContainer ul {
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+ul button {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(42, 42, 43);
+  box-shadow: 2px 4px rgb(42, 42, 43);
+  height: 50px;
+  width: 200px;
+  font-size: 1rem;
+}
+/* header */
+
+#header {
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0.5px 2px rgb(42, 42, 43);
+}
+/* Main */
+
+#page1 {
+  display: block;
+  justify-content: center;
+  width: 80vw;
+  height: 75vh;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgb(194, 191, 191);
+  box-shadow: 2px 4px rgb(42, 42, 43);
+  background-color: rgb(235, 233, 233);
+}
+.inputPage1 {
+  margin: 40px 0px 40px 100px;
+  padding: 10px;
+  font-size: 1.5rem;
+  justify-items: center;
+}
+#input1,
+#input2,
+#input3,
+#input4 {
+  font-size: 1.5rem;
+}
+
+#calBtn {
+  border: 2px solid rgb(42, 42, 43);
+  box-shadow: 2px 4px rgb(42, 42, 43);
+  height: 50px;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 10px;
+  position: absolute;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+.btnCal {
+  text-align: center;
+  right: 100px;
+}
+
+#page2 {
+  display: none;
+  width: 80vw;
+  height: 75vh;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgb(238, 210, 51);
+  box-shadow: 2px 4px rgb(238, 210, 51);
+  background-color: rgb(236, 225, 159);
+}
+#page2 h2 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+}
+.inputPage2 {
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+}
+#InputDate {
+  font-size: 2rem;
+}
+#page2 p {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+#page3 {
+  display: none;
+  width: 80vw;
+  height: 75vh;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 1px solid rgb(194, 191, 191);
+  box-shadow: 2px 4px grey;
+}
