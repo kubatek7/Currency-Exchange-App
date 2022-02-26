@@ -39,6 +39,9 @@ ul button {
 /* ==================Main=========================== */
 
 /* ===============Page 1 =============== */
+
+/* ======Layout ===== */
+
 #page1 {
   display: block;
   justify-content: center;
@@ -65,6 +68,8 @@ ul button {
   padding: 5px;
   margin: 2px;
 }
+
+/* ===========Calculation Button============ */
 
 #calBtn {
   border: 2px solid rgb(42, 42, 43);
@@ -105,9 +110,11 @@ ul button {
   height: 75vh;
   margin: 20px auto;
   border-radius: 15px;
-  border: 1px solid rgb(238, 210, 51);
-  box-shadow: 2px 4px rgb(238, 210, 51);
-  background-color: rgb(236, 225, 159);
+  border: 1px solid rgb(54, 27, 5);
+  box-shadow: 2px 4px rgb(54, 27, 5);
+  background-image: url(./Image/gold-bar2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 #page3 h2 {
   text-align: center;
@@ -137,3 +144,4 @@ ul button {
 /* Media Querry  */
 /* Complete Average GBP page */
 /* Gold prices  */
+/* Background image to be added  */
