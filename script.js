@@ -12,7 +12,7 @@ fetch('http://api.nbp.pl/api/exchangerates/tables/A/')
         });
     });
 
-// Block view on button click 
+// Show div on button click 
 
 function pageChange(pageNo) {
 
@@ -25,7 +25,7 @@ function pageChange(pageNo) {
         page2.style.display = "none";
         page3.style.display = "none";
     }
-    else if (pageNo ===2) {
+    else if (pageNo === 2) {
         page1.style.display = "none";
         page2.style.display = "block";
         page3.style.display = "none";

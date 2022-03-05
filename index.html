@@ -8,63 +8,68 @@
     <link rel="stylesheet" href="./jquery/jquery-ui.min.css" />
     <script src="./jquery/jquery-ui.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+
     <title>Currency Exchange App</title>
   </head>
   <body>
-    <header id="header"><h1>Your Currency Exchange Rate App</h1></header>
-    <nav id="navContainer">
-      <!-- Click button to chnage div -->
+    <div class="container">
+      <header id="header">
+        <h1>Currency Exchange</h1>
+        <div class="date">
+          <p>28-02-2022</p>
+        </div>
+      </header>
+      <nav id="navContainer">
+        <!-- Click button to chnage div -->
 
-      <ul>
-        <button onclick="pageChange(1)">Exchange Rate</button>
-        <button onclick="pageChange(2)">GBP Average Exchange</button>
-        <button onclick="pageChange(3)">Gold Exchnage Rate</button>
+        <ul class="header-btn">
+          <button onclick="pageChange(1)">Exchange Rate</button>
+          <button onclick="pageChange(2)">GBP Average Exchange</button>
+          <button onclick="pageChange(3)">Gold Exchnage Rate</button>
+        </ul>
+      </nav>
+
+      <!-- =======================Main Box=================== -->
+
+      <!--======= Page 1======= -->
+
+      <ul id="page1">
+        <li class="inputPage1">
+          <!-- <label for="input1">Currency I have: </label> -->
+          <h3>Currency I have:</h3>
+          <input readonly id="input1" type="text" placeholder="" value="PLN" />
+        </li>
+        <li class="inputPage1">
+          <label for="input2">Amount: </label>
+          <input id="input2" type="number" placeholder="0.00000" />
+        </li>
+
+        <li class="inputPage1">
+          <label for="input3">Currency I want:</label>
+          <input id="input3" type="text" placeholder="" />
+        </li>
+        <li class="inputPage1">
+          <label for="input4">Amount: </label>
+          <input id="input4" type="number" placeholder="0.00000" />
+        </li>
+        <div class="btnCal">
+          <button id="calBtn" onclick="calculate()">Exchange</button>
+        </div>
       </ul>
-    </nav>
+   
+      <!--=========== Page 2===== -->
 
-    <!-- =======================Main Box=================== -->
-
-    <!--======= Page 1======= -->
-
-    <div id="page1">
-      <div class="inputPage1">
-        <label for="input1">Currency I have: </label><br />
-        <input readonly id="input1" type="text" placeholder="" value="PLN" />
-      </div>
-      <div class="inputPage1">
-        <label for="input2">Amount: </label><br />
-        <input id="input2" type="number" placeholder="" />
+      <div id="page2">
+        <h1>WORK IN PROGRESS !!!!!</h1>
       </div>
 
-      <div class="inputPage1">
-        <label for="input3">Currency I want:</label><br />
-        <input id="input3" type="text" placeholder="" />
-      </div>
-      <div class="inputPage1">
-        <label for="input4">Amount: </label><br />
-        <input id="input4" type="number" placeholder="" />
-      </div>
-      <div class="btnCal">
-        <button id="calBtn" onclick="calculate()">Calculate</button>
+      <!--======== Page 3======== -->
+
+      <div id="page3">
+        <h2>Gold price</h2>
+        <div class="inputPage3">
       </div>
     </div>
-
-    <!--=========== Page 2===== -->
-
-    <div id="page2">
-      <h1>WORK IN PROGRESS !!!!!</h1>
-    </div>
-
-    <!--======== Page 3======== -->
-
-    <div id="page3">
-      <h2>Gold price</h2>
-      <div class="inputPage3">
-        <label for="inputDate">Select Date: </label><br />
-        <input id="inputDate" type="date" placeholder="" />
-      </div>
-      <p>WORK IN PROGRESS !!!!!</p>
-    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

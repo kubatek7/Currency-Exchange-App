@@ -1,41 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+}
 body {
-  background-color: white;
-  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(45, 45, 55);
 }
-/* ======Navigation Container====== */
-
-#navContainer ul {
-  display: flex;
-  max-width: 80vw;
+.container {
+  width: 40vw;
+  height: 100%;
+  margin: 0px auto;
 }
-
-#navContainer ul {
-  margin: auto;
-}
-
-ul {
-  justify-content: space-evenly;
-}
-ul button {
-  list-style-type: none;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
-  border: 2px solid rgb(42, 42, 43);
-  box-shadow: 2px 4px rgb(42, 42, 43);
-  height: 50px;
-  width: 200px;
-  font-size: 1rem;
-}
-
 /* ====================Header======================= */
 
 #header {
-  text-align: center;
+  height: 200px;
   padding: 10px;
-  text-shadow: 0.5px 2px rgb(42, 42, 43);
+  text-shadow: 2px 4px rgb(42, 42, 43);
+  width: 100%;
 }
+#header h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  margin: 20px;
+}
+#header .date {
+  text-shadow: none;
+  color: white;
+  padding: 10px;
+  background-color: #000000;
+  width: 100%;
+}
+.date p {
+  text-align: right;
+  font-size: 1.25rem;
+  margin: 0;
+  width: 100%;
+}
+/* ======Navigation Container====== */
+
+.header-btn {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+#navContainer button {
+  list-style-type: none;
+  color: whitesmoke;
+  border: 2px solid white;
+  height: 65px;
+  width: 200px;
+  font-size: 1.25rem;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(42, 42, 43);
+  padding: 10px;
+  margin: 10px;
+}
+
 /* ==================Main=========================== */
 
 /* ===============Page 1 =============== */
@@ -44,58 +72,65 @@ ul button {
 
 #page1 {
   display: block;
-  justify-content: center;
-  width: 80vw;
-  height: 75vh;
-  background-color: white;
-  margin: 20px auto;
-  border-radius: 15px;
-  border: 1px solid rgb(194, 191, 191);
-  box-shadow: 2px 4px rgb(42, 42, 43);
-  background-color: rgb(235, 233, 233);
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  background-color: rgb(45, 45, 55);
 }
 .inputPage1 {
-  margin: 40px 0px 40px 100px;
+  margin: 20px;
   padding: 10px;
   font-size: 1.5rem;
-  justify-items: center;
+  align-content: space-between;
+  list-style: none;
+  overflow-y: auto;
 }
-#input1,
-#input2,
-#input3,
-#input4 {
-  font-size: 1.5rem;
-  padding: 5px;
-  margin: 2px;
+li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* float: right; */
+}
+/* label {
+  margin: 0 0 4px;
+  color: #fff;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+} */
+input {
+  background-color: rgb(45, 45, 55);
+  color: #fff;
+  font-size: 1.25rem;
+  height: 50px;
+  width: 300px;
+  margin-left: 40px;
+  padding: 10px;
 }
 
 /* ===========Calculation Button============ */
 
 #calBtn {
-  border: 2px solid rgb(42, 42, 43);
-  box-shadow: 2px 4px rgb(42, 42, 43);
-  height: 50px;
-  width: 200px;
-  font-size: 1rem;
-  border-radius: 10px;
-  position: absolute;
-  margin-bottom: 20px;
-}
-.btnCal {
+  font-size: 2rem;
   text-align: center;
+  width: 100%;
+  background-color: rgb(64, 184, 104);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  height: 60px;
 }
-
+#claBtn:hover {
+}
 /* ===============Page 2 =============== */
 
 #page2 {
-  display: none;
-  width: 80vw;
-  height: 75vh;
-  margin: 20px auto;
-  border-radius: 15px;
-  border: 1px solid rgb(194, 191, 191);
-  box-shadow: 2px 4px grey;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  background-color: rgb(83, 83, 83);
 }
+
 #page2 h1 {
   text-align: center;
   margin-top: 100px;
@@ -105,21 +140,20 @@ ul button {
 /* ===============Page 3 =============== */
 
 #page3 {
-  display: none;
-  width: 80vw;
-  height: 75vh;
-  margin: 20px auto;
-  border-radius: 15px;
-  border: 1px solid rgb(54, 27, 5);
-  box-shadow: 2px 4px rgb(54, 27, 5);
-  background-image: url(./Image/gold-bar2.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  background-color: rgb(83, 83, 83);
 }
+
 #page3 h2 {
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
   font-size: 4rem;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
 }
 .inputPage3 {
   position: absolute;
@@ -128,7 +162,7 @@ ul button {
   text-align: center;
   font-size: 2rem;
 }
-#InputDate {
+#input-date {
   font-size: 2rem;
 }
 #page3 p {
@@ -137,6 +171,8 @@ ul button {
   border: 3px solid grey;
   padding: 10px;
   text-align: center;
+}
+@media screen {
 }
 
 /* =========================TO DO LIST =========================== */
